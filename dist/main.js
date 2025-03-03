@@ -3,8 +3,8 @@ let dateTime = new Date();
 const getLabel = (id) => document.getElementById(id);
 const units = ["day", "month", "year", "hour", "minute", "second"];
 const getFromDate = [
-    (d) => d.getDay(),
-    (d) => d.getMonth(),
+    (d) => d.getDate(),
+    (d) => d.getMonth() + 1,
     (d) => d.getFullYear(),
     (d) => d.getHours(),
     (d) => d.getMinutes(),
