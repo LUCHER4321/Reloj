@@ -4,8 +4,8 @@ const getLabel = (id: string) => document.getElementById(id) as HTMLLabelElement
 
 const units = ["day", "month", "year", "hour", "minute", "second"];
 const getFromDate: ((d: Date) => number)[] = [
-    (d) => d.getDay(),
-    (d) => d.getMonth(),
+    (d) => d.getDate(),
+    (d) => d.getMonth() + 1,
     (d) => d.getFullYear(),
     (d) => d.getHours(),
     (d) => d.getMinutes(),
